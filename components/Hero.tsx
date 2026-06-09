@@ -11,12 +11,18 @@ export default function Hero() {
         position: "absolute", right: 0, bottom: 0,
         height: "100%", width: "50%", opacity: 0.055, pointerEvents: "none",
       }} viewBox="0 0 400 600" fill="white" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax meet">
-        <rect x="160" y="20" width="80" height="520" rx="40"/>
-        <rect x="40" y="150" width="120" height="60" rx="30"/>
-        <rect x="40" y="100" width="60" height="130" rx="30"/>
-        <rect x="240" y="190" width="120" height="60" rx="30"/>
-        <rect x="300" y="140" width="60" height="130" rx="30"/>
-        <rect x="140" y="540" width="120" height="40" rx="8"/>
+        {/* Base hint */}
+        <rect x="158" y="502" width="134" height="67" rx="16" opacity="0.5"/>
+        {/* Main trunk */}
+        <rect x="191" y="100" width="84" height="435" rx="42"/>
+        {/* Left arm — horizontal connector */}
+        <rect x="67" y="251" width="150" height="58" rx="29"/>
+        {/* Left arm — vertical upright */}
+        <rect x="67" y="150" width="58" height="167" rx="29"/>
+        {/* Right arm — horizontal connector */}
+        <rect x="249" y="317" width="151" height="58" rx="29"/>
+        {/* Right arm — vertical upright */}
+        <rect x="341" y="217" width="58" height="167" rx="29"/>
       </svg>
       <div style={{ position:"absolute",inset:0,pointerEvents:"none",background:"radial-gradient(ellipse at 25% 55%, rgba(184,115,51,0.07) 0%, transparent 60%)" }}/>
       <div style={{ position:"relative",zIndex:2,maxWidth:"640px" }}>

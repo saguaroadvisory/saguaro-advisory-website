@@ -14,7 +14,7 @@ export default function About() {
       <div style={{ maxWidth:"1200px", margin:"0 auto", display:"grid", gridTemplateColumns:"1fr 1fr", gap:"80px", alignItems:"center" }} className="about-grid">
         {/* Card */}
         <div style={{ backgroundColor:"#1C2B3A",borderRadius:"12px",padding:"48px 40px",color:"#fff" }}>
-          <div style={{ fontFamily:"'Playfair Display',serif",fontSize:"1.5rem",marginBottom:"6px" }}>Licensed CPA</div>
+          <div style={{ fontFamily:"'Playfair Display',serif",fontSize:"1.5rem",marginBottom:"6px" }}>Adrian Buenrostro, CPA</div>
           <div style={{ fontSize:"0.78rem",color:"#D4934A",letterSpacing:"0.08em",textTransform:"uppercase",fontWeight:600,marginBottom:"28px",fontFamily:"'Inter',sans-serif" }}>Founder · Saguaro Advisory</div>
           <div style={{ display:"flex",flexWrap:"wrap",gap:"8px",marginBottom:"32px" }}>
             {tags.map(t=>(
