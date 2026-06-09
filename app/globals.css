@@ -3,12 +3,14 @@
 @import "tailwindcss";
 
 :root {
-  --navy: #1C2B3A;
-  --sand: #EDE6D6;
-  --copper: #B87333;
-  --copper-light: #C8864A;
-  --navy-light: #2A3F52;
-  --sand-dark: #D9CFBA;
+  --forest-deep:  #2C3A2E;
+  --forest-mid:   #3E5040;
+  --forest-light: #4A5E4C;
+  --sage:         #7A9E7E;
+  --sage-deep:    #5E7A60;
+  --cream:        #F2E4C8;
+  --cream-warm:   #F2EDE3;
+  --cream-dark:   #D9CFBA;
 }
 
 * {
@@ -22,8 +24,8 @@ html {
 }
 
 body {
-  background-color: var(--sand);
-  color: var(--navy);
+  background-color: var(--cream-warm);
+  color: var(--forest-deep);
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
 }

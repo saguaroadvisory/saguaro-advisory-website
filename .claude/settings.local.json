@@ -16,7 +16,8 @@
       "Bash(git -C /tmp/saguaro-build remote -v)",
       "Bash(ssh -T git@github.com)",
       "Bash(ssh-keyscan github.com)",
-      "Bash(mkdir -p ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts 2>&1 && ssh -T git@github.com 2>&1 | head -3)"
+      "Bash(mkdir -p ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts 2>&1 && ssh -T git@github.com 2>&1 | head -3)",
+      "Bash(git commit -m 'Update contact email to adrian@saguaroadvisory.com *)"
     ]
   }
 }
