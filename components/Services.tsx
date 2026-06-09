@@ -1,179 +1,70 @@
 "use client";
-const services = [
+
+const cards = [
   {
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M4 8h24M4 16h24M4 24h16" stroke="#B87333" strokeWidth="2" strokeLinecap="round" />
-        <circle cx="26" cy="24" r="4" stroke="#B87333" strokeWidth="2" />
-        <path d="M26 22v2l1.5 1.5" stroke="#B87333" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
+    featured: false,
+    title: "Monthly Reporting Package",
+    desc: "Reliable, clean financials delivered on a defined close cycle. Built for operators who need accurate numbers without the complexity.",
+    items: ["Managed month-end close process","Income statement, balance sheet & cash flow","Executive summary with key metrics","Inventory and COGS reconciliation","Monthly review call"],
+    price: "Starting at $2,500 / month",
+  },
+  {
+    featured: true,
+    badge: "Most Popular",
     title: "Fractional CFO",
-    description:
-      "Strategic financial leadership on a part-time basis. We sit in the CFO seat — attending leadership meetings, advising on capital decisions, and building the financial infrastructure your business needs to scale.",
+    desc: "Embedded financial leadership without a full-time hire. Strategic planning, cash management, lender relations, and reporting — all under one engagement.",
+    items: ["Everything in Monthly Reporting","13-week cash flow forecasting","Budget vs. actual variance analysis","Product line & job margin reporting","Bank covenant management & lender prep","Dedicated weekly check-in"],
+    price: "Starting at $5,500 / month",
   },
   {
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <rect x="4" y="4" width="24" height="24" rx="3" stroke="#B87333" strokeWidth="2" />
-        <path d="M10 20l4-6 4 4 4-8" stroke="#B87333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-    title: "Monthly Reporting",
-    description:
-      "Clean, consistent financial packages delivered every month — P&L, balance sheet, cash flow, and KPI dashboards built around the metrics that actually drive decisions in your operation.",
-  },
-  {
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M8 24V14M14 24V10M20 24V16M26 24V8" stroke="#B87333" strokeWidth="2" strokeLinecap="round" />
-        <path d="M6 6l6 6 6-4 8 4" stroke="#B87333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-    title: "Process Automation",
-    description:
-      "We identify manual, error-prone workflows in your finance function and replace them with automated systems — reducing close time, improving accuracy, and freeing your team to focus on higher-value work.",
-  },
-  {
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <circle cx="16" cy="16" r="11" stroke="#B87333" strokeWidth="2" />
-        <path d="M16 8v8l5 3" stroke="#B87333" strokeWidth="2" strokeLinecap="round" />
-        <path d="M9 5l2 3M23 5l-2 3" stroke="#B87333" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
-    title: "Industry Expertise",
-    description:
-      "Deep operational knowledge in manufacturing, distribution, and construction. We understand job costing, inventory valuation, working capital cycles, and the metrics lenders and buyers actually care about.",
-  },
-  {
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <rect x="4" y="18" width="6" height="10" rx="1" fill="#B87333" fillOpacity="0.3" stroke="#B87333" strokeWidth="1.5" />
-        <rect x="13" y="12" width="6" height="16" rx="1" fill="#B87333" fillOpacity="0.3" stroke="#B87333" strokeWidth="1.5" />
-        <rect x="22" y="6" width="6" height="22" rx="1" fill="#B87333" fillOpacity="0.3" stroke="#B87333" strokeWidth="1.5" />
-        <path d="M7 14l6-4 6 2 6-8" stroke="#B87333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-    title: "Forecasting & Budgeting",
-    description:
-      "Rolling 12-month forecasts and annual budgets that reflect how your business actually works — including seasonal demand, production capacity, and supply chain realities. Built to update as conditions change.",
-  },
-  {
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M6 26l6-8 5 4 5-6 4 4" stroke="#B87333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="6" cy="8" r="3" stroke="#B87333" strokeWidth="2" />
-        <circle cx="26" cy="8" r="3" stroke="#B87333" strokeWidth="2" />
-        <path d="M9 8h14" stroke="#B87333" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    ),
-    title: "Transaction Readiness",
-    description:
-      "Preparing for a sale, acquisition, or capital raise? We clean up your books, normalize EBITDA, build the financial models buyers expect, and manage the data room — so you maximize value and minimize surprises.",
+    featured: false,
+    title: "Advisory & Project Work",
+    desc: "Focused engagements for specific challenges — ERP evaluation, financial process automation, acquisition prep, or system cleanup.",
+    items: ["Financial process automation","ERP/accounting system assessment","Acquisition or sale readiness","Reporting infrastructure buildout","Lender package preparation"],
+    price: "Project-based pricing",
   },
 ];
 
 export default function Services() {
   return (
-    <section
-      id="services"
-      style={{
-        backgroundColor: "#EDE6D6",
-        padding: "100px 24px",
-      }}
-    >
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        {/* Section header */}
-        <div style={{ marginBottom: "64px", maxWidth: "600px" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "16px" }}>
-            <div style={{ width: "32px", height: "2px", backgroundColor: "#B87333" }} />
-            <span
-              style={{
-                color: "#B87333",
-                fontSize: "12px",
-                fontWeight: 600,
-                letterSpacing: "0.16em",
-                textTransform: "uppercase",
-                fontFamily: "'Inter', sans-serif",
-              }}
-            >
-              What We Do
-            </span>
+    <section id="services" style={{ padding:"96px 5%", backgroundColor:"#F6F2EA" }}>
+      <div style={{ maxWidth:"1200px", margin:"0 auto" }}>
+        <div style={{ display:"flex",justifyContent:"space-between",alignItems:"flex-end",flexWrap:"wrap",gap:"24px",marginBottom:"56px" }}>
+          <div>
+            <p style={{ fontSize:"0.72rem",fontWeight:600,letterSpacing:"0.14em",textTransform:"uppercase",color:"#B87333",marginBottom:"12px",fontFamily:"'Inter',sans-serif" }}>What We Offer</p>
+            <h2 style={{ fontFamily:"'Playfair Display',serif",fontSize:"clamp(1.9rem,3.5vw,2.8rem)",fontWeight:700,color:"#1C2B3A",lineHeight:1.2 }}>
+              CFO-level support,<br/>scoped to where you are
+            </h2>
           </div>
-          <h2
-            style={{
-              fontFamily: "'Playfair Display', serif",
-              color: "#1C2B3A",
-              fontSize: "clamp(32px, 4vw, 48px)",
-              fontWeight: 700,
-              lineHeight: 1.15,
-              marginBottom: "20px",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Financial leadership built
-            <br />
-            for operators.
-          </h2>
-          <p
-            style={{
-              color: "rgba(28,43,58,0.7)",
-              fontSize: "17px",
-              lineHeight: 1.7,
-              fontFamily: "'Inter', sans-serif",
-              fontWeight: 300,
-            }}
-          >
-            Every engagement is tailored to where your business is and where you&apos;re headed. No cookie-cutter packages.
+          <p style={{ fontSize:"1.0rem",color:"#5E7080",maxWidth:"400px",lineHeight:1.75,fontFamily:"'Inter',sans-serif",fontWeight:300 }}>
+            Engagements flex to fit your stage. Whether you need eyes on your numbers monthly or a true finance partner, there&apos;s a fit.
           </p>
         </div>
 
-        {/* Grid */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
-            gap: "2px",
-            backgroundColor: "rgba(28,43,58,0.1)",
-          }}
-        >
-          {services.map((s) => (
-            <div
-              key={s.title}
-              style={{
-                backgroundColor: "#EDE6D6",
-                padding: "40px 36px",
-                transition: "background-color 0.25s",
-                cursor: "default",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#E4D9C3")}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#EDE6D6")}
-            >
-              <div style={{ marginBottom: "20px" }}>{s.icon}</div>
-              <h3
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  color: "#1C2B3A",
-                  fontSize: "22px",
-                  fontWeight: 600,
-                  marginBottom: "12px",
-                  lineHeight: 1.2,
-                }}
-              >
-                {s.title}
-              </h3>
-              <p
-                style={{
-                  color: "rgba(28,43,58,0.7)",
-                  fontSize: "15px",
-                  lineHeight: 1.7,
-                  fontFamily: "'Inter', sans-serif",
-                  fontWeight: 300,
-                }}
-              >
-                {s.description}
-              </p>
+        <div style={{ display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))",gap:"28px" }}>
+          {cards.map((c) => (
+            <div key={c.title} style={{
+              backgroundColor: c.featured ? "#1C2B3A" : "#fff",
+              borderRadius:"10px", padding:"40px 36px",
+              border: c.featured ? "1px solid #B87333" : "1px solid #D5CBBA",
+              transition:"box-shadow 0.2s,transform 0.2s",
+            }}
+              onMouseEnter={(e)=>{ e.currentTarget.style.boxShadow="0 12px 40px rgba(28,43,58,0.1)"; e.currentTarget.style.transform="translateY(-3px)"; }}
+              onMouseLeave={(e)=>{ e.currentTarget.style.boxShadow="none"; e.currentTarget.style.transform="translateY(0)"; }}>
+              {c.badge && (
+                <div style={{ display:"inline-block",fontSize:"0.68rem",fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase",backgroundColor:"#B87333",color:"#fff",padding:"3px 10px",borderRadius:"3px",marginBottom:"20px",fontFamily:"'Inter',sans-serif" }}>{c.badge}</div>
+              )}
+              <div style={{ fontFamily:"'Playfair Display',serif",fontSize:"1.35rem",color:c.featured?"#fff":"#1C2B3A",marginBottom:"10px" }}>{c.title}</div>
+              <p style={{ fontSize:"0.875rem",color:c.featured?"rgba(255,255,255,0.62)":"#5E7080",marginBottom:"28px",lineHeight:1.7,fontFamily:"'Inter',sans-serif",fontWeight:300 }}>{c.desc}</p>
+              <ul style={{ listStyle:"none",display:"flex",flexDirection:"column",gap:"10px",marginBottom:"32px" }}>
+                {c.items.map((item) => (
+                  <li key={item} style={{ display:"flex",alignItems:"flex-start",gap:"10px",fontSize:"0.875rem",color:c.featured?"rgba(255,255,255,0.62)":"#5E7080",fontFamily:"'Inter',sans-serif" }}>
+                    <span style={{ width:"16px",height:"16px",minWidth:"16px",backgroundColor:"#B87333",borderRadius:"50%",marginTop:"2px",display:"inline-block",backgroundImage:"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='3 8 6.5 11.5 13 4'/%3E%3C/svg%3E\")",backgroundSize:"contain" }}/>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div style={{ fontFamily:"'Playfair Display',serif",fontSize:"0.95rem",color:c.featured?"#fff":"#1C2B3A",fontWeight:600,borderTop:`1px solid ${c.featured?"rgba(255,255,255,0.14)":"#D5CBBA"}`,paddingTop:"20px" }}>{c.price}</div>
             </div>
           ))}
         </div>

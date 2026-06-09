@@ -1,167 +1,40 @@
-const testimonials = [
+"use client";
+
+const results = [
   {
-    quote:
-      "Before Saguaro, our monthly close took 3 weeks and we still weren't confident in the numbers. Now it takes 5 days and we actually use the reports to run the business. The visibility into our distribution margins changed how we price.",
-    name: "Operations Director",
-    company: "Regional Distribution Company",
-    industry: "Distribution",
-    revenue: "$28M revenue",
+    tag: "Distribution · $35M Revenue",
+    quote: "We went from a 3-week close to 5 business days. For the first time, we had numbers before the month felt stale.",
+    detail: "Close cycle reduction · Reporting automation · KPI dashboard",
   },
   {
-    quote:
-      "We were heading into an acquisition and our books were a mess. The Saguaro team cleaned everything up, built the financial model the buyer needed, and helped us get to close six weeks faster than we expected. The EBITDA normalization work alone paid for itself.",
-    name: "Owner",
-    company: "Precision Manufacturing Co.",
-    industry: "Manufacturing",
-    revenue: "$45M revenue",
+    tag: "Manufacturing · $58M Revenue",
+    quote: "The product margin analysis showed us two product lines that were actually losing money. We repriced within 60 days.",
+    detail: "COGS deep-dive · Margin by product line · Pricing model",
   },
   {
-    quote:
-      "Job costing in construction is brutal to get right. Saguaro understood our WIP schedules and overbilling exposure from day one — they didn't need a three-month onboarding. Our banker now calls our financials 'the cleanest in our portfolio.'",
-    name: "CFO",
-    company: "Commercial Construction Group",
-    industry: "Construction",
-    revenue: "$62M revenue",
+    tag: "Contract Manufacturer · $22M Revenue",
+    quote: "Our bank asked for a 13-week cash forecast during a line renewal. We had it ready in 48 hours. The renewal went smoothly.",
+    detail: "Cash forecasting · Lender package prep · Covenant tracking",
   },
 ];
 
 export default function Testimonials() {
   return (
-    <section
-      id="results"
-      style={{
-        backgroundColor: "#EDE6D6",
-        padding: "100px 24px",
-      }}
-    >
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        {/* Header */}
-        <div style={{ marginBottom: "64px", maxWidth: "600px" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "16px" }}>
-            <div style={{ width: "32px", height: "2px", backgroundColor: "#B87333" }} />
-            <span
-              style={{
-                color: "#B87333",
-                fontSize: "12px",
-                fontWeight: 600,
-                letterSpacing: "0.16em",
-                textTransform: "uppercase",
-                fontFamily: "'Inter', sans-serif",
-              }}
-            >
-              Client Results
-            </span>
-          </div>
-          <h2
-            style={{
-              fontFamily: "'Playfair Display', serif",
-              color: "#1C2B3A",
-              fontSize: "clamp(32px, 4vw, 48px)",
-              fontWeight: 700,
-              lineHeight: 1.15,
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Built for operators.
-            <br />
-            Proven in the field.
-          </h2>
-        </div>
-
-        {/* Testimonials */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
-            gap: "24px",
-          }}
-        >
-          {testimonials.map((t) => (
-            <div
-              key={t.name}
-              style={{
-                backgroundColor: "#1C2B3A",
-                borderRadius: "6px",
-                padding: "40px 36px",
-                display: "flex",
-                flexDirection: "column",
-                position: "relative",
-                overflow: "hidden",
-              }}
-            >
-              {/* Industry tag */}
-              <div
-                style={{
-                  position: "absolute",
-                  top: "24px",
-                  right: "24px",
-                  backgroundColor: "rgba(184,115,51,0.15)",
-                  border: "1px solid rgba(184,115,51,0.3)",
-                  borderRadius: "3px",
-                  padding: "4px 10px",
-                  color: "#B87333",
-                  fontSize: "11px",
-                  fontWeight: 600,
-                  letterSpacing: "0.08em",
-                  textTransform: "uppercase",
-                  fontFamily: "'Inter', sans-serif",
-                }}
-              >
-                {t.industry}
-              </div>
-
-              {/* Quote mark */}
-              <div
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  color: "#B87333",
-                  fontSize: "64px",
-                  lineHeight: 0.8,
-                  marginBottom: "16px",
-                  opacity: 0.6,
-                }}
-              >
-                &ldquo;
-              </div>
-
-              <blockquote
-                style={{
-                  color: "rgba(237,230,214,0.85)",
-                  fontSize: "15px",
-                  lineHeight: 1.8,
-                  fontFamily: "'Inter', sans-serif",
-                  fontWeight: 300,
-                  flex: 1,
-                  marginBottom: "32px",
-                  fontStyle: "italic",
-                }}
-              >
-                {t.quote}
-              </blockquote>
-
-              {/* Attribution */}
-              <div style={{ borderTop: "1px solid rgba(237,230,214,0.1)", paddingTop: "20px" }}>
-                <div
-                  style={{
-                    color: "#EDE6D6",
-                    fontWeight: 500,
-                    fontSize: "14px",
-                    fontFamily: "'Inter', sans-serif",
-                    marginBottom: "4px",
-                  }}
-                >
-                  {t.name}
-                </div>
-                <div
-                  style={{
-                    color: "rgba(237,230,214,0.5)",
-                    fontSize: "13px",
-                    fontFamily: "'Inter', sans-serif",
-                  }}
-                >
-                  {t.company} · {t.revenue}
-                </div>
-              </div>
+    <section id="results" style={{ padding:"96px 5%", backgroundColor:"#1C2B3A" }}>
+      <div style={{ maxWidth:"1200px", margin:"0 auto" }}>
+        <p style={{ fontSize:"0.72rem",fontWeight:600,letterSpacing:"0.14em",textTransform:"uppercase",color:"#D4934A",marginBottom:"12px",fontFamily:"'Inter',sans-serif" }}>Client Results</p>
+        <h2 style={{ fontFamily:"'Playfair Display',serif",fontSize:"clamp(1.9rem,3.5vw,2.8rem)",fontWeight:700,color:"#fff",lineHeight:1.2,marginBottom:"16px" }}>
+          What better financials look like in practice
+        </h2>
+        <p style={{ fontSize:"1.05rem",color:"rgba(255,255,255,0.58)",maxWidth:"560px",lineHeight:1.75,marginBottom:"56px",fontFamily:"'Inter',sans-serif",fontWeight:300 }}>
+          Every engagement is different. Here&apos;s what clients typically experience within the first few months.
+        </p>
+        <div style={{ display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))",gap:"24px" }}>
+          {results.map((r)=>(
+            <div key={r.tag} style={{ backgroundColor:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.09)",borderRadius:"10px",padding:"36px 32px" }}>
+              <div style={{ fontSize:"0.7rem",fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase",color:"#D4934A",marginBottom:"16px",fontFamily:"'Inter',sans-serif" }}>{r.tag}</div>
+              <blockquote style={{ fontFamily:"'Playfair Display',serif",fontSize:"1.05rem",color:"#fff",lineHeight:1.6,marginBottom:"20px",fontStyle:"italic" }}>&ldquo;{r.quote}&rdquo;</blockquote>
+              <div style={{ fontSize:"0.78rem",color:"rgba(255,255,255,0.38)",letterSpacing:"0.04em",fontFamily:"'Inter',sans-serif" }}>{r.detail}</div>
             </div>
           ))}
         </div>
