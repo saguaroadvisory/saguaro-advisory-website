@@ -12,7 +12,7 @@ export default function Contact() {
           A discovery call is no-pressure. We&apos;ll talk through where your financials stand and whether Saguaro Advisory makes sense for your business.
         </p>
         <div style={{ display:"flex",flexDirection:"column",alignItems:"center",gap:"14px" }}>
-          <a href="mailto:hello@saguaroadvisory.com" style={{
+          <a href="mailto:adrian@saguaroadvisory.com" style={{
             display:"inline-block",backgroundColor:"#B87333",color:"#fff",
             textDecoration:"none",padding:"16px 36px",borderRadius:"4px",
             fontWeight:600,fontSize:"1rem",letterSpacing:"0.02em",
@@ -23,7 +23,7 @@ export default function Contact() {
             Book a Discovery Call
           </a>
           <span style={{ fontSize:"0.8rem",color:"#5E7080",fontFamily:"'Inter',sans-serif" }}>
-            Or email hello@saguaroadvisory.com · Typically respond within one business day
+            Or email adrian@saguaroadvisory.com · Typically respond within one business day
           </span>
         </div>
       </div>
