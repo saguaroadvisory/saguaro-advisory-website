@@ -7,21 +7,28 @@ export default function Hero() {
       display: "flex", flexDirection: "column", justifyContent: "center",
       position: "relative", overflow: "hidden", padding: "100px 5% 80px",
     }}>
-      {/* Background saguaro silhouette — L-arm geometry matching logo */}
-      <svg style={{ position: "absolute", right: 0, bottom: 0, height: "100%", width: "50%", opacity: 0.06, pointerEvents: "none" }}
+      {/* Background saguaro — same geometry as circle mark logo, scaled up */}
+      <svg style={{ position: "absolute", right: 0, bottom: 0, height: "100%", width: "50%", opacity: 0.07, pointerEvents: "none" }}
         viewBox="0 0 400 600" fill="#F2E4C8" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax meet">
-        <rect x="158" y="502" width="134" height="67" rx="16" opacity="0.5"/>
-        <rect x="191" y="100" width="84"  height="435" rx="42"/>
-        <rect x="67"  y="251" width="150" height="58"  rx="29"/>
-        <rect x="67"  y="150" width="58"  height="167" rx="29"/>
-        <rect x="249" y="317" width="151" height="58"  rx="29"/>
-        <rect x="341" y="217" width="58"  height="167" rx="29"/>
+        {/* Trunk — logo: x=15,y=7,w=6,h=22 scaled ×18, centered at x=200 */}
+        <rect x="173" y="60"  width="54"  height="480" rx="27"/>
+        {/* Left arm horizontal — logo: x=8,y=16,w=8,h=4 */}
+        <rect x="65"  y="198" width="108" height="54"  rx="22"/>
+        {/* Left arm vertical — logo: x=8,y=11,w=4,h=8 */}
+        <rect x="65"  y="108" width="54"  height="144" rx="22"/>
+        {/* Right arm horizontal — logo: x=20,y=18,w=8,h=4 */}
+        <rect x="227" y="234" width="108" height="54"  rx="22"/>
+        {/* Right arm vertical — logo: x=24,y=13,w=4,h=8 */}
+        <rect x="281" y="144" width="54"  height="144" rx="22"/>
       </svg>
 
       {/* Radial glow */}
       <div style={{ position: "absolute", inset: 0, pointerEvents: "none", background: "radial-gradient(ellipse at 25% 55%, rgba(122,158,126,0.1) 0%, transparent 60%)" }}/>
 
       <div style={{ position: "relative", zIndex: 2, maxWidth: "640px" }}>
+        <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(1rem,2vw,1.3rem)", fontWeight: 400, color: "rgba(242,228,200,0.5)", letterSpacing: "0.08em", marginBottom: "12px" }}>
+          Saguaro Advisory
+        </div>
         <span style={{ display: "inline-block", fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#7A9E7E", marginBottom: "24px", fontFamily: "'Inter', sans-serif" }}>
           Fractional CFO · Financial Advisory
         </span>
