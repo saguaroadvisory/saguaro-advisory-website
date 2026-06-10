@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="Saguaro Advisory">
+  <title>Saguaro Advisory</title>
+  <rect width="480" height="120" fill="#F2EDE3"/>
+  <circle cx="60" cy="60" r="48" fill="#2C3A2E"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#7A9E7E" stroke-width="1.2" opacity="0.4"/>
+  <path d="M52,90 L52,56 C52,52 50,50 46,50 L38,50 C35,50 33,48 33,45 L33,34 C33,31 35,29 38,29 C41,29 43,31 43,34 L43,43 C43,47 45,49 49,49 L52,49 L52,30 C52,27 54,25 57,25 L63,25 C66,25 68,27 68,30 L68,49 L71,49 C75,49 77,47 77,43 L77,34 C77,31 79,29 82,29 C85,29 87,31 87,34 L87,45 C87,48 85,50 82,50 L74,50 C70,50 68,52 68,56 L68,90 Z" fill="#F2EDE3"/>
+  <text font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="500" fill="#2C3A2E" letter-spacing="-0.5" x="124" y="54" dominant-baseline="central">Saguaro</text>
+  <text font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="400" fill="#7A9E7E" letter-spacing="6" x="126" y="82" dominant-baseline="central">ADVISORY</text>
+  <line x1="124" y1="97" x2="470" y2="97" stroke="#C8BCA8" stroke-width="0.75"/>
+  <text font-family="Georgia, serif" font-size="10.5" fill="#9C8A72" letter-spacing="0.3" x="126" y="111" font-style="italic">Strategic clarity. Lasting growth.</text>
+</svg>

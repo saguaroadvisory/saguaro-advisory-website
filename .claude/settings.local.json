@@ -17,7 +17,13 @@
       "Bash(ssh -T git@github.com)",
       "Bash(ssh-keyscan github.com)",
       "Bash(mkdir -p ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts 2>&1 && ssh -T git@github.com 2>&1 | head -3)",
-      "Bash(git commit -m 'Update contact email to adrian@saguaroadvisory.com *)"
+      "Bash(git commit -m 'Update contact email to adrian@saguaroadvisory.com *)",
+      "Bash(unzip -o \"/Users/adrian/Downloads/files.zip\" -d saguaro-logos)",
+      "Bash(cp /tmp/saguaro-logos/saguaro-icon.svg \"/Users/adrian/Saguaro Advisory/public/saguaro-icon.svg\")",
+      "Bash(cp /tmp/saguaro-logos/saguaro-logo-primary.svg \"/Users/adrian/Saguaro Advisory/public/saguaro-logo-primary.svg\")",
+      "Bash(cp /tmp/saguaro-logos/saguaro-logo-light.svg \"/Users/adrian/Saguaro Advisory/public/saguaro-logo-light.svg\")",
+      "Bash(cp /tmp/saguaro-logos/saguaro-icon-256.png \"/Users/adrian/Saguaro Advisory/public/saguaro-icon-256.png\")",
+      "Bash(cp /tmp/saguaro-logos/saguaro-logo-primary.png \"/Users/adrian/Saguaro Advisory/public/saguaro-logo-primary.png\")"
     ]
   }
 }

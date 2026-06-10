@@ -49,6 +49,13 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
+  icons: {
+    icon: [
+      { url: "/saguaro-icon.svg", type: "image/svg+xml" },
+      { url: "/saguaro-icon-256.png", sizes: "256x256", type: "image/png" },
+    ],
+    apple: "/saguaro-icon-256.png",
+  },
 };
 
 export default function RootLayout({

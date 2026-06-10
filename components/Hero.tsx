@@ -7,19 +7,10 @@ export default function Hero() {
       display: "flex", flexDirection: "column", justifyContent: "center",
       position: "relative", overflow: "hidden", padding: "100px 5% 80px",
     }}>
-      {/* Background saguaro — same geometry as circle mark logo, scaled up */}
+      {/* Background saguaro — exact path from saguaro-icon.svg, native 256×256 viewBox */}
       <svg style={{ position: "absolute", right: 0, bottom: 0, height: "100%", width: "50%", opacity: 0.07, pointerEvents: "none" }}
-        viewBox="0 0 400 600" fill="#F2E4C8" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax meet">
-        {/* Trunk — logo: x=15,y=7,w=6,h=22 scaled ×18, centered at x=200 */}
-        <rect x="173" y="60"  width="54"  height="480" rx="27"/>
-        {/* Left arm horizontal — logo: x=8,y=16,w=8,h=4 */}
-        <rect x="65"  y="198" width="108" height="54"  rx="22"/>
-        {/* Left arm vertical — logo: x=8,y=11,w=4,h=8 */}
-        <rect x="65"  y="108" width="54"  height="144" rx="22"/>
-        {/* Right arm horizontal — logo: x=20,y=18,w=8,h=4 */}
-        <rect x="227" y="234" width="108" height="54"  rx="22"/>
-        {/* Right arm vertical — logo: x=24,y=13,w=4,h=8 */}
-        <rect x="281" y="144" width="54"  height="144" rx="22"/>
+        viewBox="0 0 256 256" fill="#F2E4C8" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax meet">
+        <path d="M108,218 L108,134 C108,126 104,122 96,122 L80,122 C73,122 68,117 68,110 L68,86 C68,79 73,74 80,74 C87,74 92,79 92,86 L92,104 C92,111 97,116 104,116 L108,116 L108,78 C108,71 113,66 120,66 L136,66 C143,66 148,71 148,78 L148,116 L152,116 C159,116 164,111 164,104 L164,86 C164,79 169,74 176,74 C183,74 188,79 188,86 L188,110 C188,117 183,122 176,122 L160,122 C152,122 148,126 148,134 L148,218 Z"/>
       </svg>
 
       {/* Radial glow */}

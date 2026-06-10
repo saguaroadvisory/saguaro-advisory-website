@@ -31,20 +31,11 @@ export default function Nav() {
       }}>
         {/* Logo mark + wordmark */}
         <a href="#" style={{ display: "flex", alignItems: "center", gap: "12px", textDecoration: "none" }}>
-          {/* Circle mark from brand file, adapted to nav size */}
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Saguaro Advisory mark">
-            <circle cx="18" cy="18" r="18" fill="#3E5040"/>
-            <circle cx="18" cy="18" r="18" fill="none" stroke="#7A9E7E" strokeWidth="0.9" opacity="0.45"/>
-            {/* Trunk */}
-            <rect x="15" y="7" width="6" height="22" rx="2" fill="#F2E4C8"/>
-            {/* Left arm horizontal */}
-            <rect x="8"  y="16" width="8"  height="4" rx="1.5" fill="#F2E4C8"/>
-            {/* Left arm vertical */}
-            <rect x="8"  y="11" width="4"  height="8" rx="1.5" fill="#F2E4C8"/>
-            {/* Right arm horizontal */}
-            <rect x="20" y="18" width="8"  height="4" rx="1.5" fill="#F2E4C8"/>
-            {/* Right arm vertical */}
-            <rect x="24" y="13" width="4"  height="8" rx="1.5" fill="#F2E4C8"/>
+          {/* Official icon from saguaro-icon.svg, scaled to 36×36 */}
+          <svg width="36" height="36" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Saguaro Advisory">
+            <circle cx="128" cy="128" r="128" fill="#3E5040"/>
+            <circle cx="128" cy="128" r="128" fill="none" stroke="#7A9E7E" strokeWidth="3" opacity="0.35"/>
+            <path d="M108,218 L108,134 C108,126 104,122 96,122 L80,122 C73,122 68,117 68,110 L68,86 C68,79 73,74 80,74 C87,74 92,79 92,86 L92,104 C92,111 97,116 104,116 L108,116 L108,78 C108,71 113,66 120,66 L136,66 C143,66 148,71 148,78 L148,116 L152,116 C159,116 164,111 164,104 L164,86 C164,79 169,74 176,74 C183,74 188,79 188,86 L188,110 C188,117 183,122 176,122 L160,122 C152,122 148,126 148,134 L148,218 Z" fill="#F2E4C8"/>
           </svg>
           <div style={{ display: "flex", flexDirection: "column", gap: "1px" }}>
             <span style={{ fontFamily: "'Playfair Display', serif", color: "#F2E4C8", fontSize: "17px", fontWeight: 600, letterSpacing: "0.01em", lineHeight: 1 }}>Saguaro</span>
