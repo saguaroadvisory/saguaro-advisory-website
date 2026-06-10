@@ -17,7 +17,7 @@ export default function Hero() {
       <div style={{ position: "absolute", inset: 0, pointerEvents: "none", background: "radial-gradient(ellipse at 25% 55%, rgba(122,158,126,0.1) 0%, transparent 60%)" }}/>
 
       <div style={{ position: "relative", zIndex: 2, maxWidth: "640px" }}>
-        <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(1rem,2vw,1.3rem)", fontWeight: 400, color: "rgba(242,228,200,0.5)", letterSpacing: "0.08em", marginBottom: "12px" }}>
+        <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem,4vw,2.6rem)", fontWeight: 400, color: "rgba(242,228,200,0.5)", letterSpacing: "0.08em", marginBottom: "12px" }}>
           Saguaro Advisory
         </div>
         <span style={{ display: "inline-block", fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#7A9E7E", marginBottom: "24px", fontFamily: "'Inter', sans-serif" }}>
