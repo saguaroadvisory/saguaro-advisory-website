@@ -11,15 +11,17 @@ export default function Contact() {
         <p style={{ fontSize: "1.05rem", color: "#5E7A60", maxWidth: "540px", lineHeight: 1.75, margin: "0 auto 40px", fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>
           A discovery call is no-pressure. We&apos;ll talk through where your financials stand and whether Saguaro Advisory makes sense for your business.
         </p>
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-          <a href="mailto:adrian@saguaroadvisory.com" style={{ display: "inline-block", backgroundColor: "#7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "16px 36px", borderRadius: "4px", fontWeight: 700, fontSize: "1rem", letterSpacing: "0.02em", transition: "background-color 0.2s,transform 0.15s" }}
-            onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "#F2E4C8"; e.currentTarget.style.transform = "translateY(-1px)"; }}
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: "16px", flexWrap: "wrap" }}>
+          <a href="https://calendar.app.google/bsA7iCTALPAYhJUZ6" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", backgroundColor: "#7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "16px 36px", borderRadius: "4px", fontWeight: 700, fontSize: "1rem", letterSpacing: "0.02em", transition: "background-color 0.2s,transform 0.15s" }}
+            onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "#5E7A60"; e.currentTarget.style.transform = "translateY(-1px)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "#7A9E7E"; e.currentTarget.style.transform = "translateY(0)"; }}>
             Book a Discovery Call
           </a>
-          <span style={{ fontSize: "0.8rem", color: "#5E7A60", fontFamily: "'Inter',sans-serif" }}>
-            Or email adrian@saguaroadvisory.com · Typically respond within one business day
-          </span>
+          <a href="mailto:adrian@saguaroadvisory.com?subject=Services%20Inquiry" style={{ display: "inline-block", border: "1.5px solid #7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "16px 36px", borderRadius: "4px", fontWeight: 600, fontSize: "1rem", letterSpacing: "0.02em", transition: "background-color 0.2s,border-color 0.2s,transform 0.15s" }}
+            onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "rgba(122,158,126,0.1)"; e.currentTarget.style.transform = "translateY(-1px)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "transparent"; e.currentTarget.style.transform = "translateY(0)"; }}>
+            Email Us
+          </a>
         </div>
       </div>
     </section>
