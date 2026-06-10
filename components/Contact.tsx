@@ -1,5 +1,11 @@
 "use client";
 
+declare global {
+  interface Window {
+    gtag: (command: string, action: string, params?: Record<string, string>) => void;
+  }
+}
+
 export default function Contact() {
   return (
     <section id="contact" style={{ backgroundColor: "#F2EDE3", textAlign: "center", padding: "96px 5%" }}>
@@ -17,8 +23,8 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => {
-              if (typeof window !== "undefined" && (window as any).gtag) {
-                (window as any).gtag("event", "book_call", {
+              if (typeof window !== "undefined" && window.gtag) {
+                window.gtag("event", "book_call", {
                   event_category: "conversion",
                   event_label: "Book a Discovery Call",
                 });
@@ -32,8 +38,8 @@ export default function Contact() {
           <a
             href="mailto:adrian@saguaroadvisory.com?subject=Services%20Inquiry"
             onClick={() => {
-              if (typeof window !== "undefined" && (window as any).gtag) {
-                (window as any).gtag("event", "email_us", {
+              if (typeof window !== "undefined" && window.gtag) {
+                window.gtag("event", "email_us", {
                   event_category: "conversion",
                   event_label: "Email Us",
                 });
