@@ -6,7 +6,7 @@ const cards = [
     title: "Monthly Reporting Package",
     desc: "Reliable, clean financials delivered on a defined close cycle. Built for operators who need accurate numbers without the complexity.",
     items: ["Managed month-end close process","Income statement, balance sheet & cash flow","Executive summary with key metrics","Inventory and COGS reconciliation","Monthly review call"],
-    price: "Starting at $2,500 / month",
+    price: "Starting at $2,000 / month",
   },
   {
     featured: true,
@@ -14,7 +14,7 @@ const cards = [
     title: "Fractional CFO",
     desc: "Embedded financial leadership without a full-time hire. Strategic planning, cash management, lender relations, and reporting — all under one engagement.",
     items: ["Everything in Monthly Reporting","13-week cash flow forecasting","Budget vs. actual variance analysis","Product line & job margin reporting","Bank covenant management & lender prep","Dedicated weekly check-in"],
-    price: "Starting at $5,500 / month",
+    price: "Starting at $4,500 / month",
   },
   {
     featured: false,
