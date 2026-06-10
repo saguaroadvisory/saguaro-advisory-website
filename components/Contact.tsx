@@ -2,8 +2,23 @@
 
 declare global {
   interface Window {
-    gtag: (command: string, action: string, params?: Record<string, string>) => void;
+    gtag: (command: string, action: string, params?: Record<string, unknown>) => void;
   }
+}
+
+const BOOKING_URL = "https://calendar.app.google/bsA7iCTALPAYhJUZ6";
+
+function gtagSendEvent(url: string) {
+  const callback = () => { window.location.href = url; };
+  if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", "conversion_event_book_appointment", {
+      event_callback: callback,
+      event_timeout: 2000,
+    });
+  } else {
+    callback();
+  }
+  return false;
 }
 
 export default function Contact() {
@@ -19,17 +34,8 @@ export default function Contact() {
         </p>
         <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: "16px", flexWrap: "wrap" }}>
           <a
-            href="https://calendar.app.google/bsA7iCTALPAYhJUZ6"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => {
-              if (typeof window !== "undefined" && window.gtag) {
-                window.gtag("event", "book_call", {
-                  event_category: "conversion",
-                  event_label: "Book a Discovery Call",
-                });
-              }
-            }}
+            href={BOOKING_URL}
+            onClick={(e) => { e.preventDefault(); gtagSendEvent(BOOKING_URL); }}
             style={{ display: "inline-block", backgroundColor: "#7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "16px 36px", borderRadius: "4px", fontWeight: 700, fontSize: "1rem", letterSpacing: "0.02em", transition: "background-color 0.2s,transform 0.15s" }}
             onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "#5E7A60"; e.currentTarget.style.transform = "translateY(-1px)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "#7A9E7E"; e.currentTarget.style.transform = "translateY(0)"; }}>
