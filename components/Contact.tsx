@@ -12,12 +12,34 @@ export default function Contact() {
           A discovery call is no-pressure. We&apos;ll talk through where your financials stand and whether Saguaro Advisory makes sense for your business.
         </p>
         <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: "16px", flexWrap: "wrap" }}>
-          <a href="https://calendar.app.google/bsA7iCTALPAYhJUZ6" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", backgroundColor: "#7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "16px 36px", borderRadius: "4px", fontWeight: 700, fontSize: "1rem", letterSpacing: "0.02em", transition: "background-color 0.2s,transform 0.15s" }}
+          <a
+            href="https://calendar.app.google/bsA7iCTALPAYhJUZ6"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => {
+              if (typeof window !== "undefined" && (window as any).gtag) {
+                (window as any).gtag("event", "book_call", {
+                  event_category: "conversion",
+                  event_label: "Book a Discovery Call",
+                });
+              }
+            }}
+            style={{ display: "inline-block", backgroundColor: "#7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "16px 36px", borderRadius: "4px", fontWeight: 700, fontSize: "1rem", letterSpacing: "0.02em", transition: "background-color 0.2s,transform 0.15s" }}
             onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "#5E7A60"; e.currentTarget.style.transform = "translateY(-1px)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "#7A9E7E"; e.currentTarget.style.transform = "translateY(0)"; }}>
             Book a Discovery Call
           </a>
-          <a href="mailto:adrian@saguaroadvisory.com?subject=Services%20Inquiry" style={{ display: "inline-block", border: "1.5px solid #7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "16px 36px", borderRadius: "4px", fontWeight: 600, fontSize: "1rem", letterSpacing: "0.02em", transition: "background-color 0.2s,border-color 0.2s,transform 0.15s" }}
+          <a
+            href="mailto:adrian@saguaroadvisory.com?subject=Services%20Inquiry"
+            onClick={() => {
+              if (typeof window !== "undefined" && (window as any).gtag) {
+                (window as any).gtag("event", "email_us", {
+                  event_category: "conversion",
+                  event_label: "Email Us",
+                });
+              }
+            }}
+            style={{ display: "inline-block", border: "1.5px solid #7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "16px 36px", borderRadius: "4px", fontWeight: 600, fontSize: "1rem", letterSpacing: "0.02em", transition: "background-color 0.2s,border-color 0.2s,transform 0.15s" }}
             onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "rgba(122,158,126,0.1)"; e.currentTarget.style.transform = "translateY(-1px)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "transparent"; e.currentTarget.style.transform = "translateY(0)"; }}>
             Email Us
