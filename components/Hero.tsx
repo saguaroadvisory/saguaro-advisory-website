@@ -30,7 +30,7 @@ export default function Hero() {
         </h1>
 
         <p style={{ fontSize: "1.05rem", color: "rgba(242,228,200,0.68)", maxWidth: "520px", marginBottom: "44px", lineHeight: 1.75, fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
-          Saguaro Advisory partners with manufacturing and distribution companies — $10M to $100M in revenue — to bring CFO-level financial leadership without the full-time overhead.
+          Saguaro Advisory partners with manufacturing and distribution companies with up to $100M in revenue to bring CFO-level financial leadership without the full-time overhead.
         </p>
 
         <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
