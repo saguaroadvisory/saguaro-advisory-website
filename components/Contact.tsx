@@ -15,6 +15,10 @@ function gtagSendEvent(url: string) {
       event_callback: callback,
       event_timeout: 2000,
     });
+    window.gtag("event", "book_call", {
+      event_callback: callback,
+      event_timeout: 2000,
+    });
   } else {
     callback();
   }
