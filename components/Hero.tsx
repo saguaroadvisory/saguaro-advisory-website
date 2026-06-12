@@ -37,7 +37,7 @@ export default function Hero() {
           <a href="#contact" style={{ display: "inline-block", backgroundColor: "#7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "14px 30px", borderRadius: "4px", fontWeight: 700, fontSize: "0.95rem", letterSpacing: "0.02em", transition: "background-color 0.2s,transform 0.15s" }}
             onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "#F2E4C8"; e.currentTarget.style.transform = "translateY(-1px)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "#7A9E7E"; e.currentTarget.style.transform = "translateY(0)"; }}>
-            Book a Discovery Call
+            Contact Us
           </a>
           <a href="#services" style={{ display: "inline-block", border: "1.5px solid rgba(242,228,200,0.28)", color: "rgba(242,228,200,0.82)", textDecoration: "none", padding: "14px 30px", borderRadius: "4px", fontWeight: 500, fontSize: "0.95rem", transition: "border-color 0.2s,color 0.2s" }}
             onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(242,228,200,0.65)"; e.currentTarget.style.color = "#F2E4C8"; }}

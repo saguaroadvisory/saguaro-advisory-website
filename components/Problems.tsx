@@ -63,7 +63,7 @@ export default function Problems() {
             onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "#7A9E7E"; e.currentTarget.style.color = "#2C3A2E"; e.currentTarget.style.transform = "translateY(-1px)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "#2C3A2E"; e.currentTarget.style.color = "#F2E4C8"; e.currentTarget.style.transform = "translateY(0)"; }}
           >
-            Book a Discovery Call
+            Contact Us
           </a>
         </div>
       </div>
