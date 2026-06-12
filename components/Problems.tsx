@@ -25,6 +25,47 @@ export default function Problems() {
             </div>
           ))}
         </div>
+
+        {/* Micro-CTA */}
+        <div style={{
+          marginTop: "56px",
+          borderTop: "1px solid #D9CFBA",
+          paddingTop: "48px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          flexWrap: "wrap",
+          gap: "24px",
+        }}>
+          <div>
+            <p style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.3rem,2.5vw,1.75rem)", fontWeight: 700, color: "#2C3A2E", lineHeight: 1.25, margin: 0 }}>
+              Sound familiar? Let&apos;s talk.
+            </p>
+            <p style={{ fontSize: "0.95rem", color: "#5E7A60", marginTop: "8px", fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>
+              A 30-minute call costs nothing. Unclear financials cost plenty.
+            </p>
+          </div>
+          <a
+            href="#contact"
+            style={{
+              display: "inline-block",
+              backgroundColor: "#2C3A2E",
+              color: "#F2E4C8",
+              textDecoration: "none",
+              padding: "14px 32px",
+              borderRadius: "4px",
+              fontWeight: 700,
+              fontSize: "0.95rem",
+              letterSpacing: "0.02em",
+              whiteSpace: "nowrap",
+              transition: "background-color 0.2s,transform 0.15s",
+            }}
+            onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "#7A9E7E"; e.currentTarget.style.color = "#2C3A2E"; e.currentTarget.style.transform = "translateY(-1px)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "#2C3A2E"; e.currentTarget.style.color = "#F2E4C8"; e.currentTarget.style.transform = "translateY(0)"; }}
+          >
+            Book a Discovery Call
+          </a>
+        </div>
       </div>
     </section>
   );
