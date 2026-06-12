@@ -75,13 +75,14 @@ export default function RootLayout({
         `}</Script>
       </head>
       <body className="min-h-full flex flex-col antialiased">
+        {/* ProfessionalService schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
             "name": "Saguaro Advisory",
-            "description": "Fractional CFO services for manufacturing and distribution companies ($10M–$100M revenue).",
+            "description": "Fractional CFO services for manufacturing and distribution companies with up to $100M in revenue.",
             "url": "https://www.saguaroadvisory.com",
             "email": "adrian@saguaroadvisory.com",
             "founder": {
@@ -90,10 +91,7 @@ export default function RootLayout({
               "jobTitle": "Founder & Fractional CFO",
               "hasCredential": "CPA"
             },
-            "areaServed": {
-              "@type": "Country",
-              "name": "United States"
-            },
+            "areaServed": { "@type": "Country", "name": "United States" },
             "serviceType": [
               "Fractional CFO",
               "Monthly Financial Reporting",
@@ -102,7 +100,75 @@ export default function RootLayout({
               "Transaction Readiness"
             ],
             "knowsAbout": ["Manufacturing", "Distribution", "Construction", "Job Costing", "Inventory Accounting"],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Fractional CFO Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Monthly Reporting",
+                    "description": "Clean, timely financial reporting so you always know where you stand."
+                  },
+                  "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "price": "2000",
+                    "priceCurrency": "USD",
+                    "unitText": "month"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Fractional CFO",
+                    "description": "Ongoing CFO-level financial leadership without the full-time overhead."
+                  },
+                  "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "price": "4500",
+                    "priceCurrency": "USD",
+                    "unitText": "month"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Advisory & Project Work",
+                    "description": "Targeted engagements for audits, transactions, or process improvement."
+                  }
+                }
+              ]
+            },
             "sameAs": []
+          })}}
+        />
+        {/* WebSite schema with sitelinks navigation */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Saguaro Advisory",
+            "url": "https://www.saguaroadvisory.com"
+          })}}
+        />
+        {/* SiteNavigationElement schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Site Navigation",
+            "itemListElement": [
+              { "@type": "SiteLinksSearchBox", "url": "https://www.saguaroadvisory.com" },
+              { "@type": "ListItem", "position": 1, "name": "Services", "url": "https://www.saguaroadvisory.com/#services" },
+              { "@type": "ListItem", "position": 2, "name": "About", "url": "https://www.saguaroadvisory.com/#about" },
+              { "@type": "ListItem", "position": 3, "name": "Results", "url": "https://www.saguaroadvisory.com/#results" },
+              { "@type": "ListItem", "position": 4, "name": "Contact", "url": "https://www.saguaroadvisory.com/#contact" }
+            ]
           })}}
         />
         {children}
