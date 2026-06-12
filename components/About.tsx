@@ -6,6 +6,7 @@ const diffs = [
   { label: "Industry-specific expertise", detail: "Deep background in manufacturing, construction, and distribution accounting." },
   { label: "Built for efficiency", detail: "Led process automation initiatives that cut close cycles and reporting overhead. Your team's time matters." },
   { label: "No jargon, no fluff", detail: "Straight talk about what the numbers mean and what to do about them." },
+  { label: "Works in your system", detail: "Xero Certified Professional. Also fluent in QuickBooks, Sage, and any ERP your operation runs on." },
 ];
 
 export default function About() {
