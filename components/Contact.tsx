@@ -9,7 +9,7 @@ declare global {
 
 const BOOKING_URL = "https://calendar.app.google/bsA7iCTALPAYhJUZ6";
 // Web3Forms access key — get yours free at https://web3forms.com
-const WEB3FORMS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
+const WEB3FORMS_KEY = "b7ba388d-b205-4f56-b1ea-03b49b24e4a8";
 
 function gtagSendEvent(url: string) {
   const callback = () => { window.location.href = url; };
