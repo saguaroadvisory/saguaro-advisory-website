@@ -1,9 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
+
+  const switchLang = () => {
+    localStorage.setItem("saguaro-lang", "es");
+    router.push("/es");
+  };
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20);
@@ -55,6 +62,10 @@ export default function Nav() {
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#F2E4C8")}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#7A9E7E")}
           >Book a Call</a>
+          <button onClick={switchLang} style={{ background: "none", border: "1px solid rgba(242,228,200,0.3)", borderRadius: "4px", color: "rgba(242,228,200,0.6)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.06em", padding: "5px 10px", cursor: "pointer", fontFamily: "'Inter',sans-serif", transition: "color 0.2s, border-color 0.2s" }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = "#F2E4C8"; e.currentTarget.style.borderColor = "rgba(242,228,200,0.7)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(242,228,200,0.6)"; e.currentTarget.style.borderColor = "rgba(242,228,200,0.3)"; }}
+          >ES</button>
         </div>
 
         {/* Mobile hamburger */}
@@ -69,6 +80,9 @@ export default function Nav() {
             <a key={l.label} href={l.href} onClick={() => setMenuOpen(false)} style={{ display: "block", color: "rgba(242,228,200,0.85)", textDecoration: "none", fontSize: "15px", fontWeight: 500, padding: "12px 0", borderBottom: "1px solid rgba(242,228,200,0.08)" }}>{l.label}</a>
           ))}
           <a href="#contact" onClick={() => setMenuOpen(false)} style={{ display: "block", marginTop: "16px", backgroundColor: "#7A9E7E", color: "#2C3A2E", padding: "12px 0", borderRadius: "4px", textDecoration: "none", fontSize: "14px", fontWeight: 700, textAlign: "center" }}>Book a Call</a>
+          <button onClick={switchLang} style={{ display: "block", width: "100%", marginTop: "12px", background: "none", border: "1px solid rgba(242,228,200,0.3)", borderRadius: "4px", color: "rgba(242,228,200,0.6)", fontSize: "13px", fontWeight: 600, padding: "10px", cursor: "pointer", fontFamily: "'Inter',sans-serif" }}>
+            Ver en Español
+          </button>
         </div>
       )}
 

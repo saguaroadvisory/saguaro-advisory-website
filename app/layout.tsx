@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
+import LanguagePicker from "@/components/LanguagePicker";
 
 const SITE_URL = "https://www.saguaroadvisory.com";
 
@@ -171,6 +172,7 @@ export default function RootLayout({
             ]
           })}}
         />
+        <LanguagePicker />
         {children}
       </body>
     </html>
