@@ -144,12 +144,12 @@ function HeroEs() {
 
 /* ─── Problems ─── */
 const problemsEs = [
-  { title: "Costos de inventario en los que no puede confiar", body: "PEPS, UEPS, promedio ponderado — cuando su método de costeo no coincide con sus operaciones, los reportes de margen son ficción. Corregimos las entradas para que sus números digan la verdad." },
-  { title: "Sorpresas de flujo de caja a fin de mes", body: "Es rentable en papel pero tiene poco efectivo. Las cuentas por cobrar se están acumulando, los pagos se están apilando y su línea de crédito se siente más ajustada de lo que debería." },
+  { title: "Costos de inventario en los que no puede confiar", body: "PEPS, UEPS, promedio ponderado — cuando su método de costeo no coincide con sus operaciones, los reportes de margen son pura ficción. Corregimos las entradas para que sus cifras reflejen la realidad." },
+  { title: "Sorpresas de flujo de caja a fin de mes", body: "Es rentable en papel, pero tiene poco efectivo. Las cuentas por cobrar se acumulan, las cuentas por pagar también, y su línea de crédito está más ajustada de lo que debería." },
   { title: "Sin visibilidad del margen por trabajo o producto", body: "Cuando no puede ver el margen por línea de producto, cliente o trabajo, está tomando decisiones de precios a ciegas. Construimos los reportes que muestran dónde realmente está ganando dinero." },
-  { title: "Su equipo está superando su función financiera", body: "Ha escalado la operación pero su infraestructura financiera no ha seguido el ritmo. Su contador está abrumado y su CPA solo aparece en época de impuestos." },
-  { title: "Los reportes tardan demasiado en ser útiles", body: "Si su cierre de fin de mes tarda tres semanas, está gestionando con datos del trimestre pasado. Optimizamos los ciclos de reporte para que pueda actuar mientras aún importa." },
-  { title: "Preguntas de prestamistas o compradores que no puede responder rápido", body: "Cuando un banco, firma de capital privado o posible comprador solicita detalles financieros, necesita libros limpios y una historia sólida. Nos aseguramos de que siempre esté preparado." },
+  { title: "Su equipo ha crecido más rápido que su función financiera", body: "Ha escalado la operación pero su infraestructura financiera no ha seguido el ritmo. Su contador está abrumado y su CPA solo aparece en época de impuestos." },
+  { title: "Los reportes tardan demasiado en ser útiles", body: "Si su cierre de fin de mes tarda tres semanas, está gestionando con datos del mes pasado. Optimizamos los ciclos de reporte para que pueda actuar a tiempo." },
+  { title: "Preguntas de prestamistas o compradores que no puede responder rápido", body: "Cuando un banco, firma de capital privado o posible comprador solicita detalles financieros, necesita libros limpios y un historial financiero sólido. Nos aseguramos de que siempre esté preparado." },
 ];
 
 function ProblemsEs() {
@@ -165,7 +165,7 @@ function ProblemsEs() {
     <section id="problemas" style={{ padding: "96px 5%", backgroundColor: "#fff" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <p style={{ fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#7A9E7E", marginBottom: "12px", fontFamily: "'Inter',sans-serif" }}>¿Le suena familiar?</p>
-        <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,3.5vw,2.8rem)", fontWeight: 700, color: "#2C3A2E", lineHeight: 1.2, marginBottom: "16px" }}>Los problemas que mantienen despiertos a los operadores</h2>
+        <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,3.5vw,2.8rem)", fontWeight: 700, color: "#2C3A2E", lineHeight: 1.2, marginBottom: "16px" }}>Los problemas que no lo dejan dormir a los operadores</h2>
         <p style={{ fontSize: "1.05rem", color: "#5E7A60", maxWidth: "560px", lineHeight: 1.75, marginBottom: "56px", fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>Las empresas de manufactura y distribución en crecimiento enfrentan desafíos financieros específicos. Los hemos visto todos.</p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: "28px" }}>
           {problemsEs.map((p, i) => (
@@ -199,15 +199,15 @@ const cardsEs = [
     title: "Paquete de Reportes Mensuales",
     desc: "Estados financieros confiables y limpios entregados en un ciclo de cierre definido. Diseñado para operadores que necesitan números precisos sin complejidad.",
     items: ["Proceso de cierre de fin de mes","Estado de resultados, balance general y flujo de caja","Resumen ejecutivo con métricas clave","Conciliación de inventario y costo de ventas","Llamada de revisión mensual"],
-    price: "Desde $2,000 / mes",
+    price: "Desde $2,000 USD / mes",
   },
   {
     featured: true,
     badge: "Más Popular",
     title: "CFO Fraccional",
     desc: "Liderazgo financiero integrado sin contratación de tiempo completo. Planeación estratégica, gestión de efectivo, relaciones con prestamistas y reportes en un solo compromiso.",
-    items: ["Todo incluido en Reportes Mensuales","Pronóstico de flujo de caja a 13 semanas","Análisis de varianza presupuesto vs. real","Reporte de margen por línea de producto y trabajo","Gestión de convenios bancarios y preparación con prestamistas","Check-in semanal dedicado"],
-    price: "Desde $4,500 / mes",
+    items: ["Todo incluido en Reportes Mensuales","Pronóstico de flujo de caja a 13 semanas","Análisis de varianza presupuesto vs. real","Reporte de margen por línea de producto y trabajo","Gestión de convenios bancarios y preparación con prestamistas","Reunión semanal de seguimiento dedicada"],
+    price: "Desde $4,500 USD / mes",
   },
   {
     featured: false,
@@ -225,7 +225,7 @@ function ServicesEs() {
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: "24px", marginBottom: "56px" }}>
           <div>
             <p style={{ fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#7A9E7E", marginBottom: "12px", fontFamily: "'Inter',sans-serif" }}>Lo Que Ofrecemos</p>
-            <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,3.5vw,2.8rem)", fontWeight: 700, color: "#2C3A2E", lineHeight: 1.2 }}>Soporte de nivel CFO,<br/>adaptado a donde usted está</h2>
+            <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,3.5vw,2.8rem)", fontWeight: 700, color: "#2C3A2E", lineHeight: 1.2 }}>Soporte de nivel CFO,<br/>adaptado a la etapa de su negocio</h2>
           </div>
           <p style={{ fontSize: "1.0rem", color: "#5E7A60", maxWidth: "400px", lineHeight: 1.75, fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>Los compromisos se adaptan a su etapa. Ya sea que necesite supervisión mensual o un verdadero socio financiero, hay una opción adecuada.</p>
         </div>
@@ -257,9 +257,9 @@ function ServicesEs() {
 /* ─── About ─── */
 const diffsEs = [
   { label: "Experiencia específica del sector", detail: "Amplio conocimiento en contabilidad de manufactura, construcción y distribución." },
-  { label: "Construido para la eficiencia", detail: "Hemos liderado iniciativas de automatización que reducen los ciclos de cierre y los costos operativos de reporte." },
-  { label: "Sin jerga, sin relleno", detail: "Comunicación directa sobre lo que significan los números y qué hacer al respecto." },
-  { label: "Trabaja en su sistema", detail: "Profesional Certificado de Xero. También experto en QuickBooks, Sage y cualquier ERP que utilice su operación." },
+  { label: "Enfocados en la eficiencia", detail: "Hemos liderado iniciativas de automatización que reducen los ciclos de cierre y los costos operativos de reporte." },
+  { label: "Sin tecnicismos, sin rodeos", detail: "Comunicación directa sobre lo que significan los números y qué hacer al respecto." },
+  { label: "Compatible con su sistema", detail: "Profesional Certificado de Xero. También experto en QuickBooks, Sage y cualquier ERP que utilice su operación." },
 ];
 
 function AboutEs() {
@@ -269,10 +269,10 @@ function AboutEs() {
         <p style={{ fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#7A9E7E", marginBottom: "12px", fontFamily: "'Inter',sans-serif" }}>Nosotros</p>
         <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,3.5vw,2.8rem)", fontWeight: 700, color: "#2C3A2E", lineHeight: 1.2, marginBottom: "20px" }}>Un CFO que habla su idioma</h2>
         <p style={{ fontSize: "1.0rem", color: "#5E7A60", lineHeight: 1.8, marginBottom: "20px", fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>
-          La mayoría de los asesores financieros entienden las hojas de cálculo. Pocos entienden qué pasa cuando un trabajo se excede, un proveedor sube precios a mitad del trimestre, o un cliente de distribución estira los plazos de pago a 60 días.
+          La mayoría de los asesores financieros entienden las hojas de cálculo. Pocos entienden qué pasa cuando un trabajo se excede, un proveedor sube precios a mitad del trimestre, o un cliente de distribución extiende los plazos de pago hasta 60 días.
         </p>
         <p style={{ fontSize: "1.0rem", color: "#5E7A60", lineHeight: 1.8, marginBottom: "48px", fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>
-          Con más de una década trabajando dentro de empresas de manufactura y distribución, Saguaro Advisory aporta pensamiento de nivel CFO basado en cómo estos negocios realmente funcionan.
+          Con más de una década trabajando dentro de empresas de manufactura y distribución, Saguaro Advisory aporta una perspectiva estratégica de CFO basada en cómo estos negocios realmente funcionan.
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: "20px", textAlign: "left" }}>
           {diffsEs.map(d => (
@@ -294,7 +294,7 @@ function AboutEs() {
 const resultsEs = [
   { tag: "Distribución · $35M en Ingresos", quote: "Pasamos de un cierre de 3 semanas a 5 días hábiles. Por primera vez, teníamos los números antes de que el mes se sintiera obsoleto.", detail: "Reducción del ciclo de cierre · Automatización de reportes · Panel de KPIs" },
   { tag: "Manufactura · $58M en Ingresos", quote: "El análisis de margen por producto nos mostró dos líneas que en realidad estaban perdiendo dinero. Rehicimos los precios en 60 días.", detail: "Análisis profundo de costos · Margen por línea de producto · Modelo de precios" },
-  { tag: "Fabricante por Contrato · $22M en Ingresos", quote: "Nuestro banco pidió un pronóstico de flujo de caja a 13 semanas durante una renovación de línea. Lo tuvimos listo en 48 horas. La renovación salió bien.", detail: "Pronóstico de flujo de caja · Preparación de paquete para prestamista · Seguimiento de convenios" },
+  { tag: "Fabricante por Contrato · $22M en Ingresos", quote: "Nuestro banco pidió un pronóstico de flujo de caja a 13 semanas durante la renovación de nuestra línea de crédito. Lo tuvimos listo en 48 horas. La renovación salió bien.", detail: "Pronóstico de flujo de caja · Preparación de paquete para prestamista · Seguimiento de convenios" },
 ];
 
 function TestimonialsEs() {
@@ -413,7 +413,7 @@ function ContactEs() {
 
           <div style={{ backgroundColor: "#fff", borderRadius: "10px", padding: "48px 40px", border: "1px solid #D9CFBA" }}>
             <p style={{ fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#7A9E7E", marginBottom: "16px", fontFamily: "'Inter',sans-serif" }}>Enviar un mensaje</p>
-            <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.5rem", fontWeight: 700, color: "#2C3A2E", lineHeight: 1.25, marginBottom: "8px" }}>¿No está listo para reservar?<br />Está bien también.</h3>
+            <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.5rem", fontWeight: 700, color: "#2C3A2E", lineHeight: 1.25, marginBottom: "8px" }}>¿No está listo para reservar?<br />No hay problema.</h3>
             <p style={{ fontSize: "0.875rem", color: "#5E7A60", lineHeight: 1.7, marginBottom: "32px", fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>
               Deje un mensaje y le responderemos en un día hábil.
             </p>
@@ -448,7 +448,7 @@ function ContactEs() {
                     onBlur={(e) => { e.currentTarget.style.borderColor = "#C8BFA8"; }}/>
                 </div>
                 <div>
-                  <label htmlFor="es-message" style={labelStyle}>¿Qué tiene en mente?</label>
+                  <label htmlFor="es-message" style={labelStyle}>¿En qué podemos ayudarle?</label>
                   <textarea id="es-message" name="message" required placeholder="Cuéntenos brevemente sobre su empresa y qué está tratando de resolver..." rows={5} value={formData.message} onChange={handleChange} style={{ ...inputStyle, resize: "vertical", minHeight: "120px" }}
                     onFocus={(e) => { e.currentTarget.style.borderColor = "#7A9E7E"; }}
                     onBlur={(e) => { e.currentTarget.style.borderColor = "#C8BFA8"; }}/>
