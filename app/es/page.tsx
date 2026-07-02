@@ -107,14 +107,14 @@ function HeroEs() {
           Saguaro Advisory
         </div>
         <span style={{ display: "inline-block", fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#7A9E7E", marginBottom: "24px", fontFamily: "'Inter', sans-serif" }}>
-          CFO Fraccional · Asesoría Financiera
+          CFO Fraccional · Consultoría Financiera
         </span>
         <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2.4rem,5vw,3.8rem)", fontWeight: 700, color: "#F2E4C8", lineHeight: 1.15, marginBottom: "28px" }}>
           La claridad financiera que su operación{" "}
           <em style={{ fontStyle: "normal", color: "#7A9E7E" }}>realmente necesita</em>
         </h1>
         <p style={{ fontSize: "1.05rem", color: "rgba(242,228,200,0.68)", maxWidth: "520px", marginBottom: "44px", lineHeight: 1.75, fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
-          Saguaro Advisory trabaja con empresas de manufactura y distribución con hasta $100M en ingresos para brindar liderazgo financiero de nivel CFO sin los costos de una contratación de tiempo completo.
+          Saguaro Advisory trabaja con empresas de manufactura y distribución con hasta $100M en ingresos para ofrecerle liderazgo financiero de nivel CFO sin el costo de una contratación de planta.
         </p>
         <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
           <a href="#contacto" style={{ display: "inline-block", backgroundColor: "#7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "14px 30px", borderRadius: "4px", fontWeight: 700, fontSize: "0.95rem", letterSpacing: "0.02em", transition: "background-color 0.2s,transform 0.15s" }}
@@ -146,9 +146,9 @@ function HeroEs() {
 const problemsEs = [
   { title: "Costos de inventario en los que no puede confiar", body: "PEPS, UEPS, promedio ponderado — cuando su método de costeo no coincide con sus operaciones, los reportes de margen son pura ficción. Corregimos las entradas para que sus cifras reflejen la realidad." },
   { title: "Sorpresas de flujo de caja a fin de mes", body: "Es rentable en papel, pero tiene poco efectivo. Las cuentas por cobrar se acumulan, las cuentas por pagar también, y su línea de crédito está más ajustada de lo que debería." },
-  { title: "Sin visibilidad del margen por trabajo o producto", body: "Cuando no puede ver el margen por línea de producto, cliente o trabajo, está tomando decisiones de precios a ciegas. Construimos los reportes que muestran dónde realmente está ganando dinero." },
+  { title: "Sin visibilidad sobre el margen por trabajo o producto", body: "Cuando no puede ver el margen por línea de producto, cliente o trabajo, está tomando decisiones de precios a ciegas. Construimos los reportes que revelan dónde realmente está ganando dinero." },
   { title: "Su equipo ha crecido más rápido que su función financiera", body: "Ha escalado la operación pero su infraestructura financiera no ha seguido el ritmo. Su contador está abrumado y su CPA solo aparece en época de impuestos." },
-  { title: "Los reportes tardan demasiado en ser útiles", body: "Si su cierre de fin de mes tarda tres semanas, está gestionando con datos del mes pasado. Optimizamos los ciclos de reporte para que pueda actuar a tiempo." },
+  { title: "Cuando los reportes llegan, ya son historia", body: "Si su cierre de fin de mes tarda tres semanas, está gestionando con datos del mes pasado. Optimizamos los ciclos de reporte para que pueda actuar a tiempo." },
   { title: "Preguntas de prestamistas o compradores que no puede responder rápido", body: "Cuando un banco, firma de capital privado o posible comprador solicita detalles financieros, necesita libros limpios y un historial financiero sólido. Nos aseguramos de que siempre esté preparado." },
 ];
 
@@ -165,7 +165,7 @@ function ProblemsEs() {
     <section id="problemas" style={{ padding: "96px 5%", backgroundColor: "#fff" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <p style={{ fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#7A9E7E", marginBottom: "12px", fontFamily: "'Inter',sans-serif" }}>¿Le suena familiar?</p>
-        <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,3.5vw,2.8rem)", fontWeight: 700, color: "#2C3A2E", lineHeight: 1.2, marginBottom: "16px" }}>Los problemas que no lo dejan dormir a los operadores</h2>
+        <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,3.5vw,2.8rem)", fontWeight: 700, color: "#2C3A2E", lineHeight: 1.2, marginBottom: "16px" }}>Los problemas que quitan el sueño a los operadores</h2>
         <p style={{ fontSize: "1.05rem", color: "#5E7A60", maxWidth: "560px", lineHeight: 1.75, marginBottom: "56px", fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>Las empresas de manufactura y distribución en crecimiento enfrentan desafíos financieros específicos. Los hemos visto todos.</p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: "28px" }}>
           {problemsEs.map((p, i) => (
@@ -179,7 +179,7 @@ function ProblemsEs() {
         <div style={{ marginTop: "56px", borderTop: "1px solid #D9CFBA", paddingTop: "48px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "24px" }}>
           <div>
             <p style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.3rem,2.5vw,1.75rem)", fontWeight: 700, color: "#2C3A2E", lineHeight: 1.25, margin: 0 }}>¿Le suena familiar? Hablemos.</p>
-            <p style={{ fontSize: "0.95rem", color: "#5E7A60", marginTop: "8px", fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>Una llamada de 30 minutos no cuesta nada. Las finanzas poco claras cuestan mucho.</p>
+            <p style={{ fontSize: "0.95rem", color: "#5E7A60", marginTop: "8px", fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>Treinta minutos de su tiempo no cuestan nada. Las finanzas sin claridad sí.</p>
           </div>
           <a href="#contacto" style={{ display: "inline-block", backgroundColor: "#2C3A2E", color: "#F2E4C8", textDecoration: "none", padding: "14px 32px", borderRadius: "4px", fontWeight: 700, fontSize: "0.95rem", letterSpacing: "0.02em", whiteSpace: "nowrap", transition: "background-color 0.2s,transform 0.15s" }}
             onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "#7A9E7E"; e.currentTarget.style.color = "#2C3A2E"; e.currentTarget.style.transform = "translateY(-1px)"; }}
@@ -205,14 +205,14 @@ const cardsEs = [
     featured: true,
     badge: "Más Popular",
     title: "CFO Fraccional",
-    desc: "Liderazgo financiero integrado sin contratación de tiempo completo. Planeación estratégica, gestión de efectivo, relaciones con prestamistas y reportes en un solo compromiso.",
-    items: ["Todo incluido en Reportes Mensuales","Pronóstico de flujo de caja a 13 semanas","Análisis de varianza presupuesto vs. real","Reporte de margen por línea de producto y trabajo","Gestión de convenios bancarios y preparación con prestamistas","Reunión semanal de seguimiento dedicada"],
+    desc: "Dirección financiera integrada sin contratar de planta. Planeación estratégica, gestión de efectivo, relación con bancos e instituciones financieras y reportes — todo en un solo esquema.",
+    items: ["Todo incluido en Reportes Mensuales","Pronóstico de flujo de caja a 13 semanas","Análisis de varianza presupuesto vs. real","Reporte de margen por línea de producto y trabajo","Gestión de convenios bancarios y preparación con bancos","Reunión semanal de seguimiento dedicada"],
     price: "Desde $4,500 USD / mes",
   },
   {
     featured: false,
     title: "Asesoría y Proyectos",
-    desc: "Compromisos enfocados en desafíos específicos: evaluación de ERP, automatización de procesos financieros, preparación para adquisición o limpieza de sistemas.",
+    desc: "Proyectos enfocados en desafíos específicos: evaluación de ERP, automatización de procesos financieros, preparación para adquisición o limpieza de sistemas.",
     items: ["Automatización de procesos financieros","Evaluación de ERP y sistemas contables","Preparación para adquisición o venta","Construcción de infraestructura de reportes","Preparación de paquetes para prestamistas"],
     price: "Precio por proyecto",
   },
@@ -227,7 +227,7 @@ function ServicesEs() {
             <p style={{ fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#7A9E7E", marginBottom: "12px", fontFamily: "'Inter',sans-serif" }}>Lo Que Ofrecemos</p>
             <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,3.5vw,2.8rem)", fontWeight: 700, color: "#2C3A2E", lineHeight: 1.2 }}>Soporte de nivel CFO,<br/>adaptado a la etapa de su negocio</h2>
           </div>
-          <p style={{ fontSize: "1.0rem", color: "#5E7A60", maxWidth: "400px", lineHeight: 1.75, fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>Los compromisos se adaptan a su etapa. Ya sea que necesite supervisión mensual o un verdadero socio financiero, hay una opción adecuada.</p>
+          <p style={{ fontSize: "1.0rem", color: "#5E7A60", maxWidth: "400px", lineHeight: 1.75, fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>Cada esquema se adapta a su etapa. Si necesita visibilidad mensual o un socio financiero de fondo, hay un modelo que encaja.</p>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: "28px" }}>
           {cardsEs.map((c) => (
@@ -302,8 +302,8 @@ function TestimonialsEs() {
     <section id="resultados" style={{ padding: "96px 5%", backgroundColor: "#2C3A2E" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <p style={{ fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#7A9E7E", marginBottom: "12px", fontFamily: "'Inter',sans-serif" }}>Resultados de Clientes</p>
-        <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,3.5vw,2.8rem)", fontWeight: 700, color: "#F2E4C8", lineHeight: 1.2, marginBottom: "16px" }}>Cómo se ve una mejor gestión financiera en la práctica</h2>
-        <p style={{ fontSize: "1.05rem", color: "rgba(242,228,200,0.55)", maxWidth: "560px", lineHeight: 1.75, marginBottom: "56px", fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>Cada compromiso es diferente. Esto es lo que los clientes suelen experimentar en los primeros meses.</p>
+        <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,3.5vw,2.8rem)", fontWeight: 700, color: "#F2E4C8", lineHeight: 1.2, marginBottom: "16px" }}>Lo que una mejor gestión financiera logra en la práctica</h2>
+        <p style={{ fontSize: "1.05rem", color: "rgba(242,228,200,0.55)", maxWidth: "560px", lineHeight: 1.75, marginBottom: "56px", fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>Cada caso es distinto. Esto es lo que nuestros clientes suelen ver en los primeros meses.</p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: "24px" }}>
           {resultsEs.map(r => (
             <div key={r.tag} style={{ backgroundColor: "rgba(242,228,200,0.05)", border: "1px solid rgba(122,158,126,0.2)", borderRadius: "10px", padding: "36px 32px" }}>
@@ -379,7 +379,7 @@ function ContactEs() {
     <section id="contacto" style={{ backgroundColor: "#F2EDE3", padding: "96px 5%" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: "64px" }}>
-          <p style={{ fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#7A9E7E", marginBottom: "12px", fontFamily: "'Inter',sans-serif" }}>Comenzar</p>
+          <p style={{ fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#7A9E7E", marginBottom: "12px", fontFamily: "'Inter',sans-serif" }}>Dé el primer paso</p>
           <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.9rem,3.5vw,2.8rem)", fontWeight: 700, color: "#2C3A2E", lineHeight: 1.2, marginBottom: "16px" }}>
             ¿No está seguro si encaja bien?<br />Descubrámoslo en 30 minutos.
           </h2>
@@ -393,10 +393,10 @@ function ContactEs() {
             <p style={{ fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#7A9E7E", marginBottom: "16px", fontFamily: "'Inter',sans-serif" }}>Reserve una llamada</p>
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.5rem", fontWeight: 700, color: "#F2E4C8", lineHeight: 1.25, marginBottom: "20px" }}>30 minutos.<br />Sin presión.</h3>
             <p style={{ fontSize: "0.9rem", color: "rgba(242,228,200,0.6)", lineHeight: 1.75, marginBottom: "32px", fontFamily: "'Inter',sans-serif", fontWeight: 300 }}>
-              Hablaremos sobre el estado de sus finanzas, qué no está funcionando y si Saguaro Advisory es la opción adecuada.
+              Platicamos sobre el estado de sus finanzas, qué no está funcionando, y si Saguaro Advisory tiene sentido para su negocio.
             </p>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "12px", marginBottom: "36px" }}>
-              {["Entender su función financiera actual","Identificar sus brechas más urgentes","Explicar cómo funciona un compromiso","Sin obligación, sin presentación de ventas"].map(item => (
+              {["Entender su función financiera actual","Identificar sus brechas más urgentes","Explicar cómo funciona cada esquema","Sin presión, sin pitch de ventas"].map(item => (
                 <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "0.875rem", color: "rgba(242,228,200,0.65)", fontFamily: "'Inter',sans-serif" }}>
                   <span style={{ width: "16px", height: "16px", minWidth: "16px", backgroundColor: "#7A9E7E", borderRadius: "50%", marginTop: "2px", display: "inline-block", backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%232C3A2E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='3 8 6.5 11.5 13 4'/%3E%3C/svg%3E\")", backgroundSize: "contain" }}/>
                   {item}
@@ -407,7 +407,7 @@ function ContactEs() {
               style={{ display: "inline-block", backgroundColor: "#7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "14px 30px", borderRadius: "4px", fontWeight: 700, fontSize: "0.95rem", letterSpacing: "0.02em", transition: "background-color 0.2s,transform 0.15s" }}
               onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "#F2E4C8"; e.currentTarget.style.transform = "translateY(-1px)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "#7A9E7E"; e.currentTarget.style.transform = "translateY(0)"; }}>
-              Reservar una Llamada de Exploración
+              Agendar una llamada
             </a>
           </div>
 
