@@ -114,7 +114,7 @@ function HeroEs() {
           <em style={{ fontStyle: "normal", color: "#7A9E7E" }}>realmente necesita</em>
         </h1>
         <p style={{ fontSize: "1.05rem", color: "rgba(242,228,200,0.68)", maxWidth: "520px", marginBottom: "44px", lineHeight: 1.75, fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
-          Saguaro Advisory trabaja con empresas de manufactura y distribución con hasta $100M en ingresos para ofrecerle liderazgo financiero de nivel CFO sin el costo de una contratación de planta.
+          Saguaro Advisory atiende empresas de hasta $100M en ingresos, con especialidad en manufactura y construcción, y les ofrece dirección financiera de nivel CFO sin el costo de contratar de planta.
         </p>
         <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
           <a href="#contacto" style={{ display: "inline-block", backgroundColor: "#7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "14px 30px", borderRadius: "4px", fontWeight: 700, fontSize: "0.95rem", letterSpacing: "0.02em", transition: "background-color 0.2s,transform 0.15s" }}
