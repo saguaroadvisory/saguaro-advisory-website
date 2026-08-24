@@ -22,6 +22,7 @@ export default function Nav() {
     { label: "Services", href: "#services" },
     { label: "About", href: "#about" },
     { label: "Results", href: "#results" },
+    { label: "Insights", href: "/blog" },
   ];
 
   return (

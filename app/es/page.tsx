@@ -117,10 +117,10 @@ function HeroEs() {
           Saguaro Advisory atiende empresas de hasta $100M en ingresos, con especialidad en manufactura y construcción, y les ofrece dirección financiera de nivel CFO sin el costo de contratar de planta.
         </p>
         <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
-          <a href="#contacto" style={{ display: "inline-block", backgroundColor: "#7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "14px 30px", borderRadius: "4px", fontWeight: 700, fontSize: "0.95rem", letterSpacing: "0.02em", transition: "background-color 0.2s,transform 0.15s" }}
+          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", backgroundColor: "#7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "14px 30px", borderRadius: "4px", fontWeight: 700, fontSize: "0.95rem", letterSpacing: "0.02em", transition: "background-color 0.2s,transform 0.15s" }}
             onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "#F2E4C8"; e.currentTarget.style.transform = "translateY(-1px)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "#7A9E7E"; e.currentTarget.style.transform = "translateY(0)"; }}>
-            Contáctenos
+            Reserve una Llamada Gratis
           </a>
           <a href="#servicios" style={{ display: "inline-block", border: "1.5px solid rgba(242,228,200,0.28)", color: "rgba(242,228,200,0.82)", textDecoration: "none", padding: "14px 30px", borderRadius: "4px", fontWeight: 500, fontSize: "0.95rem", transition: "border-color 0.2s,color 0.2s" }}
             onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(242,228,200,0.65)"; e.currentTarget.style.color = "#F2E4C8"; }}
@@ -484,6 +484,65 @@ function FooterEs() {
   );
 }
 
+/* ─── Sticky Bar ─── */
+function StickyBarEs() {
+  const [visible, setVisible] = useState(false);
+  const [dismissed, setDismissed] = useState(false);
+
+  useEffect(() => {
+    if (dismissed) return;
+    const onScroll = () => {
+      const scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      setVisible(scrolled > 0.35);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [dismissed]);
+
+  if (dismissed || !visible) return null;
+
+  return (
+    <div
+      role="complementary"
+      aria-label="Agendar llamada"
+      style={{
+        position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 50,
+        backgroundColor: "#2C3A2E", borderTop: "1px solid rgba(122,158,126,0.3)",
+        padding: "14px 5%", display: "flex", alignItems: "center",
+        justifyContent: "space-between", gap: "16px", flexWrap: "wrap",
+        boxShadow: "0 -4px 24px rgba(0,0,0,0.25)",
+        animation: "slideUp 0.25s ease-out",
+      }}
+    >
+      <style>{`@keyframes slideUp{from{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1}}`}</style>
+      <p style={{ margin: 0, color: "rgba(242,228,200,0.82)", fontSize: "0.9rem", fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+        <span style={{ color: "#F2E4C8", fontWeight: 600 }}>¿Se pregunta si un CFO fraccional es para usted?</span>
+        {" "}Descúbralo en 30 minutos — sin compromiso.
+      </p>
+      <div style={{ display: "flex", alignItems: "center", gap: "12px", flexShrink: 0 }}>
+        <a
+          href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
+          onClick={() => { if (typeof window !== "undefined" && window.gtag) { window.gtag("event", "sticky_bar_cta_click_es", { event_category: "conversion" }); } }}
+          style={{ display: "inline-block", backgroundColor: "#7A9E7E", color: "#2C3A2E", textDecoration: "none", padding: "10px 22px", borderRadius: "4px", fontWeight: 700, fontSize: "0.875rem", letterSpacing: "0.02em", fontFamily: "'Inter', sans-serif", whiteSpace: "nowrap", transition: "background-color 0.2s" }}
+          onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "#F2E4C8"; }}
+          onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "#7A9E7E"; }}
+        >
+          Reserve una Llamada Gratis
+        </a>
+        <button onClick={() => setDismissed(true)} aria-label="Cerrar"
+          style={{ background: "none", border: "none", cursor: "pointer", color: "rgba(242,228,200,0.4)", padding: "4px", display: "flex", alignItems: "center", lineHeight: 1, transition: "color 0.15s" }}
+          onMouseEnter={(e) => { e.currentTarget.style.color = "rgba(242,228,200,0.8)"; }}
+          onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(242,228,200,0.4)"; }}
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            <line x1="2" y1="2" x2="14" y2="14"/><line x1="14" y1="2" x2="2" y2="14"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+}
+
 /* ─── Page ─── */
 export default function PageEs() {
   return (
@@ -496,6 +555,7 @@ export default function PageEs() {
       <TestimonialsEs />
       <ContactEs />
       <FooterEs />
+      <StickyBarEs />
     </>
   );
 }
